@@ -1,0 +1,84 @@
+.Add{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    width: 10vw;
+    min-width: 200px;
+    height: fit-content;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: rgba($color: #EAECEF, $alpha: .5);
+}
+
+.openButton{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    font-size: 1rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.active{
+    background-color: #EAECEF;
+}
+
+.form{
+    width: 100%;
+    box-sizing: border-box;
+    list-style: none;
+    & > li{
+        margin: 5px;
+    }
+    & > li:last-child{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+.inputField{
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 1rem;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid black;
+    resize: none;
+}
+@mixin button {
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 1rem;
+    padding: 10px;
+    cursor: pointer;
+}
+.addButton{
+    @include button();
+    background-color: #6FAA51;
+    color: white;
+    margin-right: 10px;
+}
+.closeButton{
+    @include button();
+    background-color: transparent;
+}
+
+@mixin closeIcon {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+}
+.closeButton::after{
+    @include closeIcon();
+    transform: translateX(-50%) rotateZ(45deg);
+}
+.closeButton::before{
+    @include closeIcon();
+    transform: translateX(-50%) rotateZ(135deg);
+}

@@ -1,0 +1,32 @@
+{
+  "lists": [
+    {
+      "name": "List #1",
+      "cards": [
+        {
+          "name": "Card #1"
+        },
+        {
+          "name": "Card #2"
+        }
+      ]
+    },
+    {
+      "name": "List #2",
+      "cards": []
+    },
+    {
+      "name": "List #3",
+      "cards": []
+    },
+    {
+      "name": "List #4",
+      "cards": [
+        {
+          "name": "Card #3"
+        }
+      ]
+    }
+  ]
+}
+

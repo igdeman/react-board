@@ -1,0 +1,33 @@
+.List{
+    box-sizing: border-box;
+    width: 10vw;
+    min-width: 200px;
+    background-color: #EAECEF;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.239);
+}
+.content > h3{
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: darkslategray;
+    color: white;
+    cursor: pointer;
+}
+.content > h3:hover{
+    background-color: rgb(33, 54, 54);
+}
+.dragging{
+    background-color: grey;
+    & > .content{
+        visibility: hidden;
+    }
+}
+.addCardLabel{
+    color:black;
+}
+.addCardInputField{
+    min-height: 3rem;
+}

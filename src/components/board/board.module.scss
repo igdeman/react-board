@@ -1,0 +1,16 @@
+.Board{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 100vw;
+    padding: 5px;
+}
+.draggable{
+    position: absolute;
+    z-index: 9999;
+    pointer-events: none;
+    transform: rotateZ(5deg);
+}
